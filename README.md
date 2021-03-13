@@ -13,3 +13,10 @@ Simple tuya server to control Smart Devices.
 ```
     npm run dev
 ```
+###### Test
+```
+curl --request POST \
+  --url http://localhost:8080/deviceId-123 \
+  --header 'Content-Type: application/json' \
+  --data '{ "code":"switch_led", "value": true }'
+```
